@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+	<style>
+		table { border-collapse:collapse; }
+		table th { text-align:center;background-color:#ddd; }
+		table td { text-align:right; }
+		table th, td { border:1px solid black; }
+	</style>
+	</head>
+<body>
+	<table>
+		<colgroup>
+			<col style="width:100px" >
+			<col style="width:150px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:150px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:150px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:150px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:150px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+			<col style="width:120px" >
+		</colgroup>
+		<thead>
+			<tr>
+				<th rowspan="2">지역</th>
+				<th colspan="4">합계</th>
+				<th colspan="4">승용</th>
+				<th colspan="4">승합</th>
+				<th colspan="4">화물</th>
+				<th colspan="4">특수</th>
+			</tr>
+			<tr>
+				<th>계</th>
+				<th>관용</th>
+				<th>자가용</th>
+				<th>영업용</th>
+				<th>계</th>
+				<th>관용</th>
+				<th>자가용</th>
+				<th>영업용</th>
+				<th>계</th>
+				<th>관용</th>
+				<th>자가용</th>
+				<th>영업용</th>
+				<th>계</th>
+				<th>관용</th>
+				<th>자가용</th>
+				<th>영업용</th>
+				<th>계</th>
+				<th>관용</th>
+				<th>자가용</th>
+				<th>영업용</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+				<td style="text-align:left">전체</td>
+				<td>1,523,018</td>
+				<td>4,817</td>
+				<td>1,344,931</td>
+				<td>173,270</td>
+				<td>1,287,133</td>
+				<td>1,741</td>
+				<td>1,163,388</td>
+				<td>122,004</td>
+				<td>37,019</td>
+				<td>1,298</td>
+				<td>29,484</td>
+				<td>6,237</td>
+				<td>186,640</td>
+				<td>1,621</td>
+				<td>149,029</td>
+				<td>35,990</td>
+				<td>12,226</td>
+				<td>157</td>
+				<td>3,030</td>
+				<td>9,039</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">중구</td>
+				<td>40,630</td>
+				<td>313</td>
+				<td>33,306</td>
+				<td>7,011</td>
+				<td>31,064</td>
+				<td>146</td>
+				<td>30,803</td>
+				<td>115</td>
+				<td>570</td>
+				<td>67</td>
+				<td>493</td>
+				<td>10</td>
+				<td>7,182</td>
+				<td>85</td>
+				<td>1,897</td>
+				<td>5,200</td>
+				<td>1,814</td>
+				<td>15</td>
+				<td>113</td>
+				<td>1,686</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">서구</td>
+				<td>32,054</td>
+				<td>138</td>
+				<td>30,407</td>
+				<td>1,509</td>
+				<td>26,272</td>
+				<td>60</td>
+				<td>25,810</td>
+				<td>402</td>
+				<td>956</td>
+				<td>36</td>
+				<td>898</td>
+				<td>22</td>
+				<td>4,673</td>
+				<td>41</td>
+				<td>3,643</td>
+				<td>989</td>
+				<td>153</td>
+				<td>1</td>
+				<td>56</td>
+				<td>96</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">동구</td>
+				<td>50,379</td>
+				<td>191</td>
+				<td>44,685</td>
+				<td>5,503</td>
+				<td>42,057</td>
+				<td>78</td>
+				<td>40,050</td>
+				<td>1,929</td>
+				<td>1,127</td>
+				<td>48</td>
+				<td>897</td>
+				<td>182</td>
+				<td>6,051</td>
+				<td>61</td>
+				<td>3,642</td>
+				<td>2,348</td>
+				<td>1,144</td>
+				<td>4</td>
+				<td>96</td>
+				<td>1,044</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">영도구</td>
+				<td>34,214</td>
+				<td>229</td>
+				<td>31,885</td>
+				<td>2,100</td>
+				<td>28,140</td>
+				<td>84</td>
+				<td>26,678</td>
+				<td>1,378</td>
+				<td>1,335</td>
+				<td>52</td>
+				<td>990</td>
+				<td>293</td>
+				<td>4,628</td>
+				<td>83</td>
+				<td>4,168</td>
+				<td>377</td>
+				<td>111</td>
+				<td>10</td>
+				<td>49</td>
+				<td>52</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">부산진구</td>
+				<td>153,164</td>
+				<td>361</td>
+				<td>130,050</td>
+				<td>22,753</td>
+				<td>133,451</td>
+				<td>124</td>
+				<td>113,904</td>
+				<td>19,423</td>
+				<td>3,423</td>
+				<td>62</td>
+				<td>2,827</td>
+				<td>534</td>
+				<td>15,548</td>
+				<td>164</td>
+				<td>13,125</td>
+				<td>2,259</td>
+				<td>742</td>
+				<td>11</td>
+				<td>194</td>
+				<td>537</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">동래구</td>
+				<td>101,460</td>
+				<td>168</td>
+				<td>97,750</td>
+				<td>3,542</td>
+				<td>87,025</td>
+				<td>72</td>
+				<td>85,476</td>
+				<td>1,477</td>
+				<td>2,331</td>
+				<td>28</td>
+				<td>1,967</td>
+				<td>336</td>
+				<td>11,635</td>
+				<td>67</td>
+				<td>10,101</td>
+				<td>1,467</td>
+				<td>469</td>
+				<td>1</td>
+				<td>206</td>
+				<td>262</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">남구</td>
+				<td>101,276</td>
+				<td>225</td>
+				<td>91,239</td>
+				<td>9,812</td>
+				<td>83,146</td>
+				<td>105</td>
+				<td>79,839</td>
+				<td>3,202</td>
+				<td>2,679</td>
+				<td>61</td>
+				<td>2,123</td>
+				<td>495</td>
+				<td>13,628</td>
+				<td>56</td>
+				<td>8,989</td>
+				<td>4,583</td>
+				<td>1,823</td>
+				<td>3</td>
+				<td>288</td>
+				<td>1,532</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">북구</td>
+				<td>106,263</td>
+				<td>271</td>
+				<td>102,267</td>
+				<td>3,725</td>
+				<td>89,387</td>
+				<td>102</td>
+				<td>87,730</td>
+				<td>1,555</td>
+				<td>2,598</td>
+				<td>56</td>
+				<td>2,237</td>
+				<td>305</td>
+				<td>13,843</td>
+				<td>105</td>
+				<td>12,102</td>
+				<td>1,636</td>
+				<td>435</td>
+				<td>8</td>
+				<td>198</td>
+				<td>229</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">해운대구</td>
+				<td>180,846</td>
+				<td>328</td>
+				<td>166,152</td>
+				<td>14,366</td>
+				<td>161,050</td>
+				<td>133</td>
+				<td>149,492</td>
+				<td>11,425</td>
+				<td>3,469</td>
+				<td>58</td>
+				<td>3,154</td>
+				<td>257</td>
+				<td>15,518</td>
+				<td>128</td>
+				<td>13,200</td>
+				<td>2,190</td>
+				<td>809</td>
+				<td>9</td>
+				<td>306</td>
+				<td>494</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">사하구</td>
+				<td>114,607</td>
+				<td>270</td>
+				<td>108,279</td>
+				<td>6,058</td>
+				<td>95,851</td>
+				<td>106</td>
+				<td>92,344</td>
+				<td>3,401</td>
+				<td>3,160</td>
+				<td>51</td>
+				<td>2,771</td>
+				<td>338</td>
+				<td>15,092</td>
+				<td>104</td>
+				<td>12,958</td>
+				<td>2,030</td>
+				<td>504</td>
+				<td>9</td>
+				<td>206</td>
+				<td>289</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">금정구</td>
+				<td>85,673</td>
+				<td>286</td>
+				<td>78,233</td>
+				<td>7,154</td>
+				<td>68,828</td>
+				<td>96</td>
+				<td>66,287</td>
+				<td>2,445</td>
+				<td>2,993</td>
+				<td>66</td>
+				<td>2,102</td>
+				<td>825</td>
+				<td>13,002</td>
+				<td>110</td>
+				<td>9,662</td>
+				<td>3,230</td>
+				<td>850</td>
+				<td>14</td>
+				<td>182</td>
+				<td>654</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">강서구</td>
+				<td>90,962</td>
+				<td>344</td>
+				<td>85,067</td>
+				<td>5,551</td>
+				<td>68,988</td>
+				<td>118</td>
+				<td>66,779</td>
+				<td>2,091</td>
+				<td>2,086</td>
+				<td>90</td>
+				<td>1,695</td>
+				<td>301</td>
+				<td>18,937</td>
+				<td>126</td>
+				<td>16,219</td>
+				<td>2,592</td>
+				<td>951</td>
+				<td>10</td>
+				<td>374</td>
+				<td>567</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">연제구</td>
+				<td>127,608</td>
+				<td>995</td>
+				<td>110,985</td>
+				<td>15,628</td>
+				<td>113,277</td>
+				<td>295</td>
+				<td>100,924</td>
+				<td>12,058</td>
+				<td>2,725</td>
+				<td>485</td>
+				<td>1,621</td>
+				<td>619</td>
+				<td>10,705</td>
+				<td>186</td>
+				<td>8,267</td>
+				<td>2,252</td>
+				<td>901</td>
+				<td>29</td>
+				<td>173</td>
+				<td>699</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">수영구</td>
+				<td>125,338</td>
+				<td>167</td>
+				<td>64,875</td>
+				<td>60,296</td>
+				<td>115,483</td>
+				<td>49</td>
+				<td>57,625</td>
+				<td>57,809</td>
+				<td>2,406</td>
+				<td>24</td>
+				<td>1,460</td>
+				<td>922</td>
+				<td>6,935</td>
+				<td>83</td>
+				<td>5,649</td>
+				<td>1,203</td>
+				<td>514</td>
+				<td>11</td>
+				<td>141</td>
+				<td>362</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">사상구</td>
+				<td>89,170</td>
+				<td>266</td>
+				<td>83,517</td>
+				<td>5,387</td>
+				<td>69,247</td>
+				<td>94</td>
+				<td>66,662</td>
+				<td>2,491</td>
+				<td>2,446</td>
+				<td>60</td>
+				<td>2,144</td>
+				<td>242</td>
+				<td>16,930</td>
+				<td>102</td>
+				<td>14,501</td>
+				<td>2,327</td>
+				<td>547</td>
+				<td>10</td>
+				<td>210</td>
+				<td>327</td>
+			</tr>
+			<tr>
+				<td style="text-align:left">기장군</td>
+				<td>89,374</td>
+				<td>265</td>
+				<td>86,234</td>
+				<td>2,875</td>
+				<td>73,867</td>
+				<td>79</td>
+				<td>72,985</td>
+				<td>803</td>
+				<td>2,715</td>
+				<td>54</td>
+				<td>2,105</td>
+				<td>556</td>
+				<td>12,333</td>
+				<td>120</td>
+				<td>10,906</td>
+				<td>1,307</td>
+				<td>459</td>
+				<td>12</td>
+				<td>238</td>
+				<td>209</td>
+			</tr>
+			</tbody>
+	</table>
+</body>
+</html>
