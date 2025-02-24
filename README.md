@@ -1,4 +1,132 @@
-# DUI_OUT
+# 🚗 부산시 음주운전 사고 예방과 단속 효율성 강화를 위한 DX 솔루션
+![슬라이드1 JPG](https://github.com/user-attachments/assets/aff8f071-59dd-43f9-bdd6-835c7be5b1d5)
 
-## hello everyone
-### customize pin plz
+</br>
+
+## 💡 프로젝트 소개
+- KT Aivle School 6기 빅프로젝트
+- 음주운전 사고에 관한 공공 데이터를 활용하여 음주운전 사고 예방과 경찰들의 단속 효율성을 높일 수 있는 DX 솔루션 제안
+- 데이터 분석(상관관계 분석,K-means 군집 분석) & 머신러닝을 활용하여 음주운전 사고 발생 지역 분석 및 건수 예측
+- 경찰이 사용할 수 있는 대시보드 및 모바일 앱 프로토타입까지 구현
+
+</br>
+
+## 팀원 구성
+
+|역할|이름|깃허브|
+|------|---|---|
+|PM|김찬진|https://github.com/chaljin416|
+|기술PM|노준영|https://github.com/junyoungnnn|
+|UI/UX|김민영|https://github.com/min-young417|
+|제안전략|이수빈|https://github.com/SuseongJr|
+|데이터분석|류민주|https://github.com/Min8760|
+|사업제안|김정훈|https://github.com/JungHoon1999|
+|제안전략|류선우|https://github.com/Sunwoo0818|
+|제안전략|오승욱|https://github.com/sehodo|
+
+</br>
+
+## 기획, 분석 Tool
+- 협업 툴 : MS Teams, Notion, GitHub, Google Drive
+- 디자인 및 프로토타입 : Figma
+- 데이터 분석 : Python, Pandas, Sklearn, Keras, Matplotlib, Seaborn
+
+</br>
+
+## 프로젝트 개요
+현재 음주운전 단속 시스템은 과거 데이터를 기반으로 하여 불특정하게 단속을 이루어져 있으며 이는 효율적인 음주운전 단속이 이루어지고 있지 않다는 것으로 우리는 AI 데이터 분석을 통하여 고위험 지역을 예측하고 고위험지역 스마트 차량 차단기 실시 및 현장 단속으로 실시간 데이터를 수집하여 더욱 세분화된 위험 지역을 예측하고 효율적인 단속체계를 갖춘 시스템으로 바꾸고자 합니다.
+
+</br>
+
+## 데이터 분석
+### 사용 데이터
+(사용 데이터 정리 후 추가 예정)
+
+### 음주운전 발생에 영향을 미치는 중요도 높은 요인 선정
+__가설)__ 부산광역시 구별 음식점, 주점, 버스 정류장 개수, 지하철역 개수, 지역구 별 인구수가 음주운전 발생건수에 영향을 미치는 주요 변수이다.  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c19d454b-6eae-4012-8dd4-ec53663f9b37" width="600">
+</p>
+
+- RandomForest 를 이용하여 도출한 음주운전 발생건수에 영향을 미치는 주요 변수  
+: __차량 등록 대수__, __지역구별 인구수__, __횡단보도 개수__, __음식점 수__, __버스 정류장 개수__, __음주운전 사고 건수__
+
+### 음주운전의 다양한 요인들의 영향을 해석 - 상관 분석
+1. 요일별 단속건수와 관련 요인 상관 분석
+   
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/10ac6780-50b9-4a20-9804-b32cdc640b18" width="600">
+</p>
+
+- 금요일, 토요일, 일요일에 음주운전이 다른 요일에 비해 많아 관련 요인과의 상관 관계를 분석하여 원인을 확인하려고 했으나 요일별로 원인의 영향은 큰 차이를 보이지 않았다.
+
+2. 연령대별 단속건수와 관련 요인
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1dacaee1-dfd1-4fea-8bae-9186d552751c" width="600">
+</p>
+
+- 10대와 20대는 주점, 지하철역, 택시 정류장이 많은 지역에서 음주운전이 많이 발생한다.
+- 30대부터 70대까지는 버스정류장, 가로등, 횡단보도, 신호등이 많은 지역에서 음주운전이 많이 발생하고, 기온이 낮을수록 음주운전이 많이 발생한다.
+
+3. 시간대별 단속건수와 관련 요인
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/063d72f1-d833-4f1b-a58c-4db71f309559" width="600">
+</p>
+
+- 04시~07시까지 주점이 많을수록 음주운전이 많이 발생한다.
+- 12시~19시까지 횡단보도 수가 많고 기온이 낮을수록 음주운전이 많이 발생한다.
+- 16시~23시까지 버스 정류장과 가로등 수가 많을수록 음주운전이 많이 발생한다.
+- 20시~23시까지 신호등 수가 많을수록 음주운전이 많이 발생한다.
+
+### 부산시 군구별 음주운전 성향 파악
+1. 요일별 음주운전 건수 군집 분석
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/038e78e5-9531-4122-b225-18207b39e08c" width="600">
+</p>
+
+- **Cluster 0** ['강서구', '금정구', '동래구', '북구', '사상구', '사하구', '연제구']: **중간 수준의 음주운전 건수를 가진 군구**  
+주중에는 평균적인 음주운전 건수를 기록  
+금요일과 토요일에 높은 건수를 보임. 주말 중심의 음주운전 단속 강화 필요  
+
+- **Cluster 1** ['동구', '서구', '영도구', '중구'] : **음주운전 건수가 가장 낮은 군구.**  
+음주운전 문제가 덜 심각한 지역  
+모든 요일에서 음주운전 건수가 낮으며, 특히 일요일에 매우 낮은 값을 보임  
+
+- **Cluster 2** ['기장군', '남구', '부산진구', '해운대구'] : **음주운전 건수가 가장 높은 군구.**  
+음주운전 문제가 심각한 지역  
+모든 요일에서 높은 음주운전 건수를 기록하며, 특히 금요일과 토요일에 가장 높은 값을 보임  
+금요일과 토요일에 단속을 강화하고, 심야 시간대 감시를 늘릴 필요  
+
+2. 시간대별 음주운전 건수 군집 분석
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/187549ec-7ef4-4a10-be4b-3997a5b4eb66" width="600">
+</p>
+
+(설명 추가 예정)
+
+3. 연령대별 음주운전 건수 군집 분석
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3e8c46cd-ac6c-4912-9847-180b7db318d0" width="600">
+</p>
+
+(설명 추가 예정)
+
+</br>
+
+## 예측 모델 구성
+<div <div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/d7ff5816-5aa8-4d9b-9f96-485c6f2ee146" width="330">
+  <img src="https://github.com/user-attachments/assets/482e98a9-e47d-452f-9d55-635c35fd63e9" width="330">
+  <img src="https://github.com/user-attachments/assets/79d42a16-4065-49b4-a1e8-d69a6dbc9163" width="330">
+</div>
+
+</br>
+
+## 솔루션 소개 
+
